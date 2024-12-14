@@ -78,7 +78,6 @@ button.secondary {
 }
 
 h2.titlePageTwo {
-    font-family: 'TT Hoves', 'sans-serif';
     font-size: calc(2.7vw + 24px);
     font-weight: 500;
     margin-right: calc(40.7vw - 129px);
@@ -106,4 +105,30 @@ p {
     font-weight: 400;
     font-size: calc(1vw + 14px);
     max-width: calc(13.5vw + 277px);
+}
+
+h2.titlePageFour {
+    font-size: calc(2.8vw + 25px);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: calc(7.7vw + 9px);
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 120px;
+    margin-bottom: calc(2.4vw + 21px);
+}
+.contentCard {
+    width: calc(8vw + 298px);
+}
+.contentCard h3 {
+    width: calc(8vw + 298pxs);
+    font-size: calc(1vw + 14.2px);
+    margin-bottom: calc(1.1vw + 9px);
+    text-transform: uppercase;
+    line-height: 140%;
+}
+.contentCard p {
+    font-size: calc(1vw + 14.2px);
 }
