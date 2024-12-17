@@ -45,7 +45,7 @@ h1 {
     line-height: 110%;
     margin-bottom: calc(2.2vw + 12px);
 }
-p .infoText {
+.infoText {
     font-weight: 300;
     font-size: calc(1vw + 14.3px);
     line-height: 126%;
@@ -101,13 +101,13 @@ h3 {
     max-width: calc(11.7vw + 284px);
     margin-bottom: calc(1.1vw + 6px);
 }
-p {
+.people p {
     font-weight: 400;
     font-size: calc(1vw + 14px);
     max-width: calc(13.5vw + 277px);
 }
 
-h2.titlePageFour {
+h2.titlePageFive {
     font-size: calc(2.8vw + 25px);
     text-transform: uppercase;
     font-weight: 500;
@@ -131,4 +131,94 @@ h2.titlePageFour {
 }
 .contentCard p {
     font-size: calc(1vw + 14.2px);
+}
+
+h2.titlePageSix {
+    font-size: calc(2.8vw + 25px);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: calc(1.8vw + 17.3px);
+}
+.border {
+    position: relative;
+    border: 2px solid black;
+    padding: calc(4.4vw + 23px) calc(3.8vw + 10px) calc(1.3vw + 18px);
+}
+.border ul li {
+    border-bottom: 1px solid black;
+    padding-bottom:  24px;
+    margin-bottom: 24px;
+    font-size: calc(0.6vw + 14px);
+}
+.border ul li:last-child {
+    margin-bottom: 0;
+}
+.border .primary {
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+.primary.desc, .primary.mob {
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+.corner {
+    position: absolute;
+    right: -8px;
+    top: -3px;
+    width: 120px;
+    height: 120px;
+}
+.primary.mob {
+    display: none;
+}
+@media (max-width: 1280px) {
+    .primary.desc {
+        display: none;
+    }
+    .primary.mob {
+        display: block
+    }
+}
+
+h2.titlePageEight {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc(2.7vw + 24px);
+    line-height: 116%;
+    max-width: calc(44.4vw + 161px);
+    margin-bottom: calc(2.2vw + 11.6px);
+}
+.income p {
+    font-weight: 400;
+    font-size: calc(1vw + 14px);
+    max-width: calc(60.6vw + 100px);
+    margin-bottom: calc(1.8vw + 13.3px);
+}
+.bold {
+    font-weight: 700;
+}
+img.hh {
+    width: calc(81.5vw + 21.4px);
+}
+
+h2.titlePageNine {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc(2.7vw + 24px);
+    margin-bottom: calc(1.1vw + 15.8px);
+}
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(8.4vw - 46.6px);
+}
+img.box {
+    width: calc(19.1vw + 334px);
+}
+.price p {
+    max-width: calc(16.8vw + 304.7px);
+    font-weight: 400;
+    font-size: calc(3vw + 16.7px);
 }
