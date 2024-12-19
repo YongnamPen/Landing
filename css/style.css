@@ -169,6 +169,7 @@ h2.titlePageFour {
     display: block;
     font-size: calc(1vw + 14px);
     margin-bottom: calc(5.5vw + 19px);
+    width: calc(26.3vw + 229px);
 }
 .legendCards {
     display: grid;
