@@ -86,6 +86,7 @@ h2.titlePageTwo {
 .courseStudent {
     display: flex;
     flex-wrap: wrap;
+    gap: 70px;
     margin-bottom: calc(1.3vw + 35px);
 }
 .people {
@@ -105,6 +106,106 @@ h3 {
     font-weight: 400;
     font-size: calc(1vw + 14px);
     max-width: calc(13.5vw + 277px);
+}
+
+.thirdPage {
+    background-color: #6E3ABA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(4.4vw + 23px) 0;
+    gap: calc(4vw + 4.6px);
+}
+.saleTimerTitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: calc(2vw + 26.5px);
+    color: #fff;
+    max-width: calc(38.3vw + 186px);
+}
+.saleTimerContainer {
+    display: flex;
+    gap: 0 calc(6vw + 10px);
+}
+.saleTimerCard {
+    text-align: center;
+}
+.saleTimerCard h4 {
+    font-family: "Chava";
+    font-size: calc(12.6vw + 12.6px);
+    color: #2f1d4e;
+}
+.saleTimerCard span {
+    font-size: calc(1.9vw + 3px);
+}
+
+h2.titlePageFour {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc(2.7vw + 24px);
+    margin-bottom: calc(5.5vw + 19px);
+}
+.legendWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 51px;
+    align-items: center;
+}
+.legend {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+.legendInfo {
+    flex-grow: 1000;
+    display: flex;
+    flex-direction: column;
+}
+.legendInfo h3 {
+    font-weight: 700;
+    font-size: calc(1.1vw + 33px);
+    margin-bottom: calc(1.1vw + 6px);
+}
+.legendInfo span {
+    display: block;
+    font-size: calc(1vw + 14px);
+    margin-bottom: calc(5.5vw + 19px);
+}
+.legendCards {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(2,calc(10.2vw + 107px));
+    grid-template-areas: "smile cup"
+                         "bag keyboard";
+    gap: calc(1.1vw + 25px) calc(8.8vw - 23px);
+}
+.card :nth-child(1){
+    grid-area: smile;
+}
+.card :nth-child(2){
+    grid-area: cup;
+}
+.card :nth-child(3){
+    grid-area: bag;
+}
+.card :nth-child(4){
+    grid-area: keyboard;
+}
+.card p {
+    font-size: calc(0.6vw + 14px);
+}
+.card img {
+    margin-bottom: 10px;
+}
+@media (max-width: 1280px) {
+    .legend {
+        display: flex;
+    }
+    .legendWrapper {
+        align-items: center;
+    }
+    .legendCards {
+        grid-template-areas: "smile keyboard"
+                             "cup bag";
+    }
 }
 
 h2.titlePageFive {
@@ -166,9 +267,9 @@ h2.titlePageSix {
 .corner {
     position: absolute;
     right: -8px;
-    top: -3px;
-    width: 120px;
-    height: 120px;
+    top: -2.5px;
+    width: calc(8.8vw + 6.7px);
+    height: calc(8.8vw + 6.7px);
 }
 .primary.mob {
     display: none;
@@ -180,6 +281,47 @@ h2.titlePageSix {
     .primary.mob {
         display: block
     }
+}
+
+@media (max-width: 376px) {
+    .contentWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.sevenPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diplom {
+    width: calc(11.3vw + 285.5px);
+    margin-right: 20px;
+    gap: 20px;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.titlePageSeven {
+    font-weight: 500;
+    font-size: calc(2.7vw + 24px);
+    text-transform: uppercase;
+    width: calc(27.7vw + 224px);
+    margin-bottom: 20px;
+}
+.textContent span {
+    font-weight: 400;
+    font-size: calc(1vw + 14.2px);
+    max-width: calc(20.6vw + 250.6px);
 }
 
 h2.titlePageEight {
@@ -211,14 +353,17 @@ h2.titlePageNine {
 }
 .price {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    margin-left: calc(8.4vw - 46.6px);
+    max-width: 100%;
 }
 img.box {
-    width: calc(19.1vw + 334px);
+    width: calc(14.1vw + 334px);
+    flex-shrink: 0;
 }
 .price p {
     max-width: calc(16.8vw + 304.7px);
     font-weight: 400;
-    font-size: calc(3vw + 16.7px);
+    font-size: calc(1vw + 11.3px);
 }
