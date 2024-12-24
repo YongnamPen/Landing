@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tehnikum Coding Landing</title>
     <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -74,6 +75,8 @@
                 <h4 class="time">00</h4>
                 <span>часов</span>
             </div>
+        </div>
+        <div class="saleTimerContainer">
             <div class="saleTimerCard">
                 <h4 class="time">00</h4>
                 <span>минут</span>
@@ -82,7 +85,6 @@
                 <h4 class="time">00</h4>
                 <span>секунд</span>
             </div>
-        </div>
         </div>
         <button>Воспользоваться скидкой</button>
     </section>
@@ -187,6 +189,49 @@
                 Набор студента - приветственное письмо с ссылкой на закрытую группу, канцелярские принадлежности, стикеры и партнерские промо-коды</p>
         </div>
     </section>
+    <section class="splide feedback" aria-label="Splide Basic HTML Example">
+        <h2 class="feedbackTitle">Отзывы наших студентов</h2>
+        <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="feedbackCard">
+                        <img src="./img/youtube.png" alt="youtube">
+                        <p>Я пришел в Техникум чтобы сменить профессию на front-end разработчика 
+                            и окончательно расстаться с предыдущим местом работы. Пробуйте себя во всем, 
+                            ничего не бойтесь и у вас всё получится!</p>
+                            <div class="feedbackUser">
+                                <img src="./img/Frame 256.png" alt="">
+                                <h3>Руслан Мухутдинов</h3>
+                            </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="feedbackCard">
+                        <img src="./img/youtube.png" alt="">
+                        <p>Я выбрал курс веб-верстальщика, потому что мне это нравится и это круто. 
+                            После окончания курса, за хорошую учебу, меня пригласили на стажировку в Техникум. 
+                            Будущее за IT и я не жалею что выбрал эту сферу!</p>
+                            <div class="feedbackUser">
+                                <img src="./img/Frame 257.png" alt="">
+                                <h3>Юлдашев Искандер</h3>
+                            </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="feedbackCard">
+                        <img src="./img/youtube.png" alt="">
+                        <p>Я увидел что Техникум всех приглашает на бесплатную лекцию по программированию. 
+                            Меня это заинтересовало, после лекции я понял, что это хороший старт для карьеры. 
+                            После курса я планирую дальше развиваться и двигаться вперед в этой сфере.</p>
+                            <div class="feedbackUser">
+                                <img src="./img/Frame 258.png" alt="">
+                                <h3>Махмудов Джахонгир</h3>
+                            </div>
+                    </div>
+                </li>
+              </ul>
+        </div>
+      </section>
     <section class="thirdPage">
         <h3 class="saleTimerTitle">10% скидка действует</h3>
         <div class="saleTimerContainer">
@@ -198,6 +243,8 @@
                 <h4 class="time">00</h4>
                 <span>часов</span>
             </div>
+        </div>
+        <div class="saleTimerContainer">
             <div class="saleTimerCard">
                 <h4 class="time">00</h4>
                 <span>минут</span>
@@ -207,9 +254,77 @@
                 <span>секунд</span>
             </div>
         </div>
-        </div>
         <button>Воспользоваться скидкой</button>
     </section>
+    <section class="splide student" aria-label="Splide Basic HTML Example">
+        <h2 class="studentTitle">Все еще сомневаешься?</h2>
+        <p class="studentText">Тогда последний козырь: после каждого выпуска мы 
+           устраиваем крутые вечеринки в честь вручения дипломов!</p>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="studentPhoto">
+                        <img src="./img/Rectangle 76.png" alt="">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="studentPhoto">
+                        <img src="./img/JM_photo_101 1.png" alt="">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="studentPhoto">
+                        <img src="./img/JM_photo_153.png" alt="">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="studentPhoto">
+                        <img src="./img/JM_photo_153 (1).png" alt="">
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="studentPhoto">
+                        <img src="./img/JM_photo_153 (2).png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </section>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide.feedback',{
+            perPage:3,
+            rewind:true,
+            arrows:false,
+            gap: "30px",
+            breakpoints: {
+                376: {
+                    perPage: 1,
+                },
+            },
+          });
+          
+          splide.mount();
+        } );
+
+    </script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide.student',{
+            perPage:2,
+            rewind:true,
+            arrows:false,
+            gap: "26px",
+            breakpoints: {
+                376: {
+                    perPage: 1,
+                },
+            },
+          });
+          splide.mount();
+        } );
+      </script>
+    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

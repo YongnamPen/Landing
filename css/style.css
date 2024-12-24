@@ -368,3 +368,58 @@ img.box {
     font-weight: 400;
     font-size: calc(1vw + 11.3px);
 }
+
+h2.feedbackTitle {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc(2.7vw + 24px);
+    margin-bottom: calc(2.2vw + 11.6px);
+}
+.feedbackCard {
+    padding: 20px 50px;
+    background-color: #F0F7FD;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.feedbackCard img:nth-child(1) {
+    width: 38px;
+    margin-bottom: 8px;
+}
+.feedbackCard p {
+    font-size: 21px;
+    max-width: 296px;
+}
+.feedbackUser {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    padding-top: 50px;
+    margin-bottom: 12px;
+}
+.feedbackUser img:nth-child(1) {
+    width: 72px;
+    border-radius: 50%
+}
+.feedbackUser h3 {
+    font-size: 21px;
+    font-weight: 400;
+    width: 170px;
+}
+
+h2.studentTitle {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc(2.7vw + 24px);
+    margin-bottom: calc(-0.7vw + 22.4px);
+}
+.studentText {
+    font-weight: 400;
+    font-size: calc(1vw + 14.2px);
+    max-width: calc(46.5vw + 153.3px);
+    margin-bottom: calc(0.4vw + 18.3px);
+}
+.studentPhoto img:nth-child(1) {
+    width: calc(19.8vw + 253.5px);
+}
