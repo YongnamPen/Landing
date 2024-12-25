@@ -11,6 +11,9 @@
 section {
     padding: 0 calc(10.6vw - 15.8px) calc(11.1vw + 18.4px);
 }
+
+/* Стиль 1 экрана */
+
 section.fisrtPage {
     background-image: url('../img/html_css_js\ 1.jpg');
     background-repeat: no-repeat;
@@ -59,7 +62,7 @@ h1 {
     
 }
 button {
-    width: 328px;
+    width: 270px;
     padding: 20px 0px;
     border-radius: 12px;
     font-size: 18px;
@@ -77,17 +80,18 @@ button.secondary {
     border: 2px solid #6E3ABA;
 }
 
+/* Стиль 2 экрана */
+
 h2.titlePageTwo {
+    text-transform: uppercase;
     font-size: calc(2.7vw + 24px);
     font-weight: 500;
     margin-right: calc(40.7vw - 129px);
-    margin-bottom: calc(5.5vw + 19px);
 }
 .courseStudent {
     display: flex;
     flex-wrap: wrap;
     gap: 70px;
-    margin-bottom: calc(1.3vw + 35px);
 }
 .people {
     margin-top: calc(5.5vw + 19px);
@@ -108,6 +112,8 @@ h3 {
     max-width: calc(13.5vw + 277px);
 }
 
+/* Стиль 3 и 11 экрана с таймером */
+
 .thirdPage {
     background-color: #6E3ABA;
     display: flex;
@@ -115,6 +121,7 @@ h3 {
     align-items: center;
     padding: calc(4.4vw + 23px) 0;
     gap: calc(4vw + 4.6px);
+    margin-bottom: 160px;
 }
 .saleTimerTitle {
     text-transform: uppercase;
@@ -125,6 +132,7 @@ h3 {
 }
 .saleTimerContainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 0 calc(6vw + 10px);
 }
 .saleTimerCard {
@@ -138,6 +146,8 @@ h3 {
 .saleTimerCard span {
     font-size: calc(1.9vw + 3px);
 }
+
+/* Стиль четвертого легендарного экрана */
 
 h2.titlePageFour {
     text-transform: uppercase;
@@ -154,6 +164,9 @@ h2.titlePageFour {
 .legend {
     flex-basis: 400px;
     flex-grow: 1;
+}
+.legend img {
+    width: calc(7.7vw + 299.8px);
 }
 .legendInfo {
     flex-grow: 1000;
@@ -196,18 +209,8 @@ h2.titlePageFour {
 .card img {
     margin-bottom: 10px;
 }
-@media (max-width: 1280px) {
-    .legend {
-        display: flex;
-    }
-    .legendWrapper {
-        align-items: center;
-    }
-    .legendCards {
-        grid-template-areas: "smile keyboard"
-                             "cup bag";
-    }
-}
+
+/* Стиль 5 экрана */
 
 h2.titlePageFive {
     font-size: calc(2.8vw + 25px);
@@ -234,6 +237,8 @@ h2.titlePageFive {
 .contentCard p {
     font-size: calc(1vw + 14.2px);
 }
+
+/* Стиль 6 экрана */
 
 h2.titlePageSix {
     font-size: calc(2.8vw + 25px);
@@ -275,38 +280,23 @@ h2.titlePageSix {
 .primary.mob {
     display: none;
 }
-@media (max-width: 1280px) {
-    .primary.desc {
-        display: none;
-    }
-    .primary.mob {
-        display: block
-    }
-}
 
-@media (max-width: 376px) {
-    .contentWrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+/* Стиль 7 экрана */
+
 .sevenPage {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .contentWrapper {
     display: flex;
     flex-wrap: wrap;
 }
-
 .diplom {
     width: calc(11.3vw + 285.5px);
     margin-right: 20px;
     gap: 20px;
 }
-
 .textContent {
     display: flex;
     flex-direction: column;
@@ -324,6 +314,8 @@ h2.titlePageSix {
     font-size: calc(1vw + 14.2px);
     max-width: calc(20.6vw + 250.6px);
 }
+
+/* Стиль 8 экрана */
 
 h2.titlePageEight {
     text-transform: uppercase;
@@ -345,6 +337,8 @@ h2.titlePageEight {
 img.hh {
     width: calc(81.5vw + 21.4px);
 }
+
+/* Стиль 9 экрана */
 
 h2.titlePageNine {
     text-transform: uppercase;
@@ -368,6 +362,8 @@ img.box {
     font-weight: 400;
     font-size: calc(1vw + 11.3px);
 }
+
+/* Стиль 10 экрана со слайдами */
 
 h2.feedbackTitle {
     text-transform: uppercase;
@@ -408,6 +404,40 @@ h2.feedbackTitle {
     width: 170px;
 }
 
+/* Стиль 12 экрана */
+
+.titlePageTwelve {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc(2.7vw + 24px);
+    margin-bottom: calc(7vw + 7.7px);
+}
+.infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 97px;
+}
+.infoCup img {
+    width: 110px;
+    margin-bottom: calc(2.2vw + 11.6px);
+}
+.infoCup p {
+    font-weight: 600;
+    font-size: calc(0.6vw + 20px);
+    width: calc(10.8vw + 287.2px);
+}
+.infoStat span {
+    font-weight: 700;
+    font-size: calc(2.7vw + 24px);
+}
+.infoStat p {
+    font-weight: 400;
+    font-size: calc(0.6vw + 14px);
+    margin-bottom: calc(1.1vw + 25.8px);
+}
+
+/* Стиль 13 экрана со слайдами */
+
 h2.studentTitle {
     text-transform: uppercase;
     font-weight: 500;
@@ -422,4 +452,160 @@ h2.studentTitle {
 }
 .studentPhoto img:nth-child(1) {
     width: calc(19.8vw + 253.5px);
+}
+
+/* footer start 14 экран */
+
+footer {
+    padding: calc(2.2vw + 52px) calc(10.6vw - 15.8px);
+    background-color: #222222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footerLeft h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc(2.7vw + 24px);
+    max-width: calc(10.5vw + 289.4px);
+    margin-bottom: calc(4.3vw + 23.7px);
+}
+.infoLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0;
+}
+.infoLeft div {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.infoLeft div p {
+    color: #fff;
+    font-size: calc(1vw + 14px);
+}
+.footerRight {
+    position: relative;
+}
+.footerForm {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 60px calc(3.3vw + 17.5px);
+    width: calc(16.4vw + 265px);
+    text-align: center;
+}
+.footerForm h3 {
+    font-weight: 700;
+    font-size: calc(0.4vw + 24px);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footerForm p {
+    font-size: calc(0.6vw + 14px);
+    margin-bottom: 30px;
+}
+.footerForm input {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #a1a1a16b;
+    padding-bottom: 10px;
+    margin-bottom: 23px;
+    outline: none;
+}
+.footerForm .primary {
+    margin-bottom: 40px;
+}
+.footerRight span {
+    font-size: 18px;
+    display: block;
+    color: grey;
+    text-transform: lowercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footerForm p:nth-child(5) {
+    font-size: 18px;
+    color: grey;
+}
+.footerForm p:last-child {
+    color: grey;
+    font-size: 18px;
+}
+.sale {
+    width: calc(6.1vw + 82px);
+    height: calc(6.1vw + 82px);
+    background-color: #6E3ABA;
+    border-radius: 50%;
+    font-size: calc(2.5vw + 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color:#fff;
+    position: absolute;
+    left: -80px;
+    top: -80px;
+}
+
+/* footer end */
+
+@media (max-width: 376px) {
+    .legend {
+        display: flex;
+    }
+    .legendWrapper {
+        align-items: center;
+    }
+    .legendCards {
+        grid-template-areas: "smile keyboard"
+                             "cup bag";
+    }
+}
+@media (max-width: 1280px) {
+    .primary.desc {
+        display: none;
+    }
+    .primary.mob {
+        display: block
+    }
+}
+
+@media (max-width: 376px) {
+    .contentWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .saleTimerContainer {
+        flex-direction: row;
+        gap: 0;
+    }
+    .saleTimerCard {
+        flex: 1 1 40%;
+        max-width: 45%;
+    }
+    .time {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 376px) {
+    footer {
+        flex-direction: column;
+        gap: 88px 0;
+    }
+}
+
+@media (max-width: 376px) {
+    .primary.desc {
+        display: none;
+    }
+    .primary.mob {
+        display: block;
+    }
+    .sale {
+        right: -30px;
+        left: auto;
+    }
 }
